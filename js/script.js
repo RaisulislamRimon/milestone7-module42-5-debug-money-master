@@ -2,6 +2,7 @@
 const calculateExpense = () => {
   const income = document.querySelector("#income").value;
   console.log(income);
+  console.log(typeof income);
   const food = document.querySelector("#food").value;
   console.log(food)
   const rent = document.querySelector("#rent").value;
@@ -30,7 +31,9 @@ const calculateExpense = () => {
    console.log(typeof expense);
 
   // calculate balance
-  const balance = parseInt(income.value) - expense;
+  const balance = parseInt(income) - expense;
+  console.log(income.value);
+  console.log(balance);
   //   validate income
   if (expense > income.value) {
     alert("Expenses cannot be more than income");
