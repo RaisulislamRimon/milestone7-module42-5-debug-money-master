@@ -1,8 +1,13 @@
+
 const calculateExpense = () => {
-  const income = document.querySelector("income").value;
-  const food = document.querySelector("food").value;
-  const rent = document.querySelector("rent").value;
-  const clothes = document.querySelectorAll("clothes").value;
+  const income = document.querySelector("#income").value;
+  console.log(income);
+  const food = document.querySelector("#food").value;
+  console.log(food)
+  const rent = document.querySelector("#rent").value;
+  console.log(rent)
+  const clothes = document.querySelector("#clothes").value;
+  console.log(clothes)
 
   if (
     income < 0 ||
@@ -32,6 +37,10 @@ const calculateExpense = () => {
     document.getElementById("balance").innerText = balance;
   }
 };
+
+// document.getElementById('calculate-btn').addEventListener('click',calculateExpense)
+
+
 
 const calculateSavings = () => {
   // calculate saving amount
