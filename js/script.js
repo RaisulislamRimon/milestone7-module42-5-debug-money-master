@@ -32,10 +32,11 @@ const calculateExpense = () => {
 
   // calculate balance
   const balance = parseInt(income) - expense;
-  console.log(income.value);
+  console.log(income);
   console.log(balance);
+  console.log(typeof balance);
   //   validate income
-  if (expense > income.value) {
+  if (expense > income) {
     alert("Expenses cannot be more than income");
   } else {
     // view total expense and balance
